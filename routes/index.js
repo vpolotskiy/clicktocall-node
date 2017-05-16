@@ -51,6 +51,7 @@ module.exports = function(app) {
         // from the /outbound route
         client.calls.create(options)
           .then((message) => {
+            console.log('client calls create message', message);
             console.log(message.responseText);
             response.send({
                 message: 'Thank you! We will be calling you shortly.',
@@ -72,6 +73,8 @@ module.exports = function(app) {
                           { voice: 'alice' });
 
         twimlResponse.dial(salesNumber);
+
+        console.log('post outbound', twimlResponse.toString());
 
         response.send(twimlResponse.toString());
     });
