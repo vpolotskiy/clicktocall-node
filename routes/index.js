@@ -69,8 +69,7 @@ module.exports = function(app) {
         var twimlResponse = new VoiceResponse();
 
         twimlResponse.say('Thanks for contacting our sales department. Our ' +
-                          'next available representative will take your call. ' +
-                                            'Lorem ipsum si dolor amet. Lorem ipsum si dolor amet.',
+                          'next available representative will take your call. ',
                           { voice: 'alice' });
 
         twimlResponse.dial(salesNumber);
