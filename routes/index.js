@@ -67,8 +67,7 @@ module.exports = function(app) {
         var salesNumber = request.params.salesNumber;
         var twimlResponse = new VoiceResponse();
 
-        twimlResponse.say('Thanks for contacting our sales department. Our ' +
-                          'next available representative will take your call. ',
+        twimlResponse.say('Thanks for contacting our sales department. Our next available representative will take your call. Thanks for contacting our sales department. Our next available representative will take your call. Thanks for contacting our sales department. Our next available representative will take your call.Thanks for contacting our sales department. Our next available representative will take your call.Thanks for contacting our sales department. Our next available representative will take your call. Our next available representative will take your call. Our next available representative will take your call. Our next available representative will take your call. ',
                           { voice: 'alice' });
 
         twimlResponse.dial(salesNumber);
